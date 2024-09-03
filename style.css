@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Variables */
+:root {
+  --textWhiteColor: #fff;
+  --textGoldenColor: #a86a3d;
+  ---bannerBgColor: #dbd0cc;
+  --iconColor: #f2c94c;
+  --textBlackColor: #212121;
+}
+
+/* Font */
+
+* {
+  font-family: "Open Sans", system-ui;
+}
+
+/* Navbar Css */
+
+.navbar {
+  padding: 20px 0px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.navbar-icons {
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-ul {
+  font-weight: 700;
+}
+
+.shopping-cart-container {
+  position: relative;
+}
+
+.cart-length-bg {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  top: 0%;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--iconColor);
+}
+
+.navbar-toggler {
+  color: var(--textWhiteColor) !important;
+  border: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23000000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Special Offer Css */
+
+.special-offer {
+  padding: 10px 0px;
+  border-top: 1px solid var(--textBlackColor);
+  border-bottom: 1px solid var(--textBlackColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.special-offer i {
+  font-size: 30px;
+  color: var(--iconColor);
+}
+
+.left-offer,
+.right-offer,
+.center-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero {
+  margin: 40px 0px;
+  background-color: var(---bannerBgColor);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-left > img {
+  width: 500px;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+
+.hero-right h3 {
+  color: var(--textGoldenColor);
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.hero-right p {
+    margin-bottom: 0px;
+  }
+
+.hero-btn {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid var(--textBlackColor);
+}
